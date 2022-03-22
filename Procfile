@@ -1,1 +1,2 @@
-web: python manage.py migrate && gunicorn orbital.wsgi
+release: python manage.py migrate
+web: gunicorn orbital.wsgi --log-file=-
